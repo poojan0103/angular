@@ -1,0 +1,31 @@
+<div class="card">
+    <div class="card-header">Add User</div>
+    <div class="card-body">
+        <form >
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" [(ngModel)]= "userObj.userName" name="userName" placeholder="Enter UserName" >
+              
+            </div>
+            
+            <div class="mb-3">
+                <label for="name" class="form-label">City</label>
+                <input type="text" class="form-control" [(ngModel)]= "userObj.userCity" name="userCity" placeholder="Enter UserCity" >
+                
+              </div>
+              <div class="mb-3">
+                <label for="name" class="form-label">Mobile</label>
+                <input type="number" class="form-control" [(ngModel)]= "userObj.userMobile" name="userMobile" placeholder="Enter MobileNumber" >
+                
+              </div>
+              <div class="mb-3">
+                <label for="name" class="form-label">AltMobile</label>
+                <input type="number" class="form-control" [(ngModel)]= "userObj.userAltMobile" name="userAltMobile" placeholder="Enter MObile number" >
+                
+              </div>
+                  
+            <button type="button" (click)= "saveUser()" class="btn btn-primary">Submit</button>
+          </form>
+
+
+    </div>
